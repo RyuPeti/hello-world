@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset+"UTF-8">
+<title>Witam</title>
+</head>
+<body>
+  <script>
+    function powiekszTekst(){
+      var lista=document.getElementsByClassName('tekst');
+      for(var i=0;i<lista.length;i++){
+        if(lista[i].style.fontSize =="")
+        {
+          lista[i].style.fontSize="1em";
+        }
+        var rozmiar=parseFloat(lista[i].style.fontSize);
+          rozmiar +=0.2;
+          lista[i].style.fontSize = rozmiar+"em";
+        }
+    }
+    function zmniejszTekst(){
+      var lista=document.getElementsByClassName('tekst');
+      for(var i=0;i<lista.length;i++){
+        if(lista[i].style.fontSize =="")
+        {
+          lista[i].style.fontSize="1em";
+        }
+        var rozmiar=parseFloat(lista[i].style.fontSize);
+          rozmiar -=0.2;
+          lista[i].style.fontSize = rozmiar+"em";
+        }}
+  </script>
+  <button onclick="powiekszTekst()"></button>
+  <button onclick="zmniejszTekst()"></button>
+  <div class="tekst" style="background-color:yellow">
+    <h1>World of Warcraft (właśc. Łord of Łorkraft, lub po kor. Łok o Łorkaft) – kolejna gra z serii Warcraft, tym razem MMORPG (co oznacza, że latamy z włócznią, łukiem, toporem bądź po prostu nawalamy łapami i zabijamy tony potworów, by zgarniać doświadczenie i złoto). Tym razem możemy wybierać między dwoma opcjami politycznymi: lewicowym Przymierzem a prawicową Hordą.</h1>
+    <p>KEK.</p>
+  </div>
+  <div class="tekst" style="background-color:red">
+    <h2>Minecraft – symulator autyzmu polegający na recyklingu kostek różnorakiego typu w celu budowania różnych budynków i przedmiotów. Dzieło Notcha i reszty Mojangu. Jego oficjalne, pirackie kopie są dostępne dla PC, Xboxa 360°, Psy 3, Androida i iOS. Dostępna od niedawna w pełnej wersji. Gra nie będzie już rozwijana jest nadal rozwijana.</h2>
+    <p>KEK.</p></div>
+  <div class="tekst" style="background-color:AntiqueWhite">
+    <h3>The Elder Scrolls V: Skyrim (ang. Zwoje Dziada V: Zsiadłe Mleko) – bardzo popularna gra komputerowa znanego studia Bethesda Softworks, znanego z tego, że jest znane, oraz z licznych bugów w innych produkcjach.</h3>
+    <p>KEK.</p>
+    <img src="C:\Users\TEB\Downloads\8YoPSae.jpg" class="tekst" style="float:left">
+</div>
+
+</body>
+</html>
